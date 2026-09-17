@@ -22,7 +22,11 @@ function render(data) {
     '<div class="summary-pill"><div class="num">' + pledgedCount + '</div><div class="lbl">Pledged</div></div>' +
     '<div class="summary-pill"><div class="num">' + pastDueCount + '</div><div class="lbl">Past due</div></div>';
 
-  var sorted = data.teams.slice().sort(function (a, b) { return b.pts - a.pts; });
+  var sorted = data.teams.slice().sort(function (a, b) {
+    if (b.w !== a.w) return b.w - a.w;
+    return b.pts - a.pts;
+  });
+
   var tbody = document.getElementById("tableBody");
   tbody.innerHTML = "";
 
