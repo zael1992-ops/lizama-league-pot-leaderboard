@@ -5,7 +5,7 @@
   "teams": [
     { "name": "Potatoe", "logo": "assets/logos/potato.png", "w": 1, "l": 0, "t": 0, "pts": 178.64, "status": "paid" },
     { "name": "Obsidians", "logo": "assets/logos/obsidians.png", "w": 1, "l": 0, "t": 0, "pts": 131.16, "status": "paid" },
-    { "name": "Balrogs", "logo": "assets/logos/balrogs.png", "w": 0, "l": 1, "t": 0, "pts": 123.66, "status": "pledged" },
+    { "name": "Balrogs", "logo": "assets/logos/balrogs.png", "w": 0, "l": 1, "t": 0, "pts": 123.66, "status": "paid" },
     { "name": "Mean Machine", "logo": "assets/logos/meanmachine.png", "w": 0, "l": 1, "t": 0, "pts": 118.02, "status": "pledged" },
     { "name": "Seitseman", "logo": "assets/logos/seitsman.png", "w": 1, "l": 0, "t": 0, "pts": 134.76, "status": "paid" },
     { "name": "Firebreathing Platypuses", "logo": "assets/logos/platypuses.png", "w": 1, "l": 0, "t": 0, "pts": 140.9, "status": "pledged" },
