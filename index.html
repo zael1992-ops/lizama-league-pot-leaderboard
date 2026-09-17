@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lizama League Pot Leaderboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="pot-card">
+    <svg class="trophy" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="92" height="92" rx="20" fill="var(--accent)"/>
+      <g fill="none" stroke="#1a1400" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M38 30h24v14c0 9-5.4 15-12 15s-12-6-12-15V30z"/>
+        <path d="M38 34h-9c-2 0-3 1.4-3 3.5 0 7 5 12 12 12"/>
+        <path d="M62 34h9c2 0 3 1.4 3 3.5 0 7-5 12-12 12"/>
+        <path d="M50 59v9"/>
+        <path d="M41 74h18l-3-6H44l-3 6z"/>
+      </g>
+    </svg>
+    <div class="pot-amount" id="potAmountDisplay">$0 mxn</div>
+    <div class="pot-label" id="potLabel">Total Pot</div>
+  </div>
+
+  <h1 id="leagueTitle">Lizama League Pot Leaderboard</h1>
+  <div class="subtitle">Fantasy standings &amp; payment tracker</div>
+
+  <div class="summary-row" id="summaryRow"></div>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Status</th>
+          <th>Team</th>
+          <th>W-L-T</th>
+          <th>Pts</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+<div class="legend">
+  <span><img class="status-icon" src="assets/icons/paid.png" alt=""> Paid</span>
+  <span><img class="status-icon" src="assets/icons/pledge.png" alt=""> Pledged</span>
+  <span><img class="status-icon" src="assets/icons/past-due.png" alt=""> Past due</span>
+</div>
+
+    <div class="footnote">Updated by editing <code>data.json</code> in the repo.</div>
+
+  <div class="rules-card">
+    <h2>Pot Rules</h2>
+    <ol>
+      <li><strong>Winner-take-all pot.</strong> Whoever of the 7 participating teams finishes highest in the final league standings/playoffs takes the entire pot — regardless of whether they're the league's overall champion.</li>
+      <li><strong>Buy-in.</strong> Each of the 7 participants pledges $250 mxn to the pot.</li>
+      <li><strong>Payout.</strong> Within 5 business days of the winner being announced, each participant pays their $250 mxn directly to the winner, or deposits it with Potatoe (treasurer) — who will forward any funds he's collected to the winner within that same 5-business-day window.</li>
+    </ol>
+  </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+:root {
+  --bg: #f4f5f7;
+  --card-bg: #ffffff;
+  --text-primary: #14161a;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --row-alt: #f8f9fb;
+  --accent: #f0c419;
+  --accent-dark: #b8860b;
+  --paid: #22c55e;
+  --pledged: #f59e0b;
+  --pastdue: #ef4444;
+  --paid-bg: #dcfce7;
+  --pledged-bg: #fef3c7;
+  --pastdue-bg: #fee2e2;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171c;
+    --card-bg: #1e2128;
+    --text-primary: #f1f2f4;
+    --text-secondary: #9aa0ab;
+    --border: #2c313a;
+    --row-alt: #23262d;
+    --accent: #f0c419;
+    --accent-dark: #d4a90c;
+    --paid: #34d399;
+    --pledged: #fbbf24;
+    --pastdue: #f87171;
+    --paid-bg: rgba(52,211,153,0.15);
+    --pledged-bg: rgba(251,191,36,0.15);
+    --pastdue-bg: rgba(248,113,113,0.15);
+    --shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 24px 16px 60px;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pot-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 28px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.trophy {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 14px;
+  display: block;
+}
+
+.pot-amount {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.pot-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+h1 {
+  font-size: 19px;
+  margin: 0 0 4px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.summary-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.summary-pill {
+  flex: 1;
+  min-width: 90px;
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 10px 12px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.summary-pill .num { font-size: 18px; font-weight: 700; }
+.summary-pill .lbl { font-size: 11px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.table-scroll {
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+}
+
+thead th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--row-alt); }
+
+.rank { font-weight: 700; color: var(--text-secondary); width: 28px; }
+
+.team-cell { display: flex; align-items: center; gap: 8px; }
+
+.avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--row-alt);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px 3px 3px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+.status-paid { background: var(--paid-bg); color: var(--paid); }
+.status-pledged { background: var(--pledged-bg); color: var(--accent-dark); }
+.status-pastdue { background: var(--pastdue-bg); color: var(--pastdue); }
+
+.dot { width: 7px; height: 7px; border-radius: 50%; }
+.dot.paid { background: var(--paid); }
+.dot.pledged { background: var(--pledged); }
+.dot.pastdue { background: var(--pastdue); }
+
+.points-total { font-weight: 700; }
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+.footnote {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 18px;
+}
+.footnote code {
+  background: var(--row-alt);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.rules-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+  margin-top: 20px;
+}
+
+.rules-card h2 {
+  font-size: 15px;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.rules-card ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.rules-card li {
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.rules-card li:last-child {
+  margin-bottom: 0;
+}
+
+.rules-card li strong {
+  color: var(--text-primary);
+}
