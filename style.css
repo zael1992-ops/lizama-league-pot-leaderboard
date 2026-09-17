@@ -238,3 +238,47 @@ tbody tr:nth-child(even) { background: var(--row-alt); }
 .rules-card li strong {
   color: var(--text-primary);
 }
+
+.deposit-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+  margin-top: 20px;
+}
+
+.deposit-card h2 {
+  font-size: 15px;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.deposit-intro {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0 0 14px;
+}
+
+.deposit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.deposit-row:last-child {
+  border-bottom: none;
+}
+
+.deposit-label {
+  color: var(--text-secondary);
+}
+
+.deposit-value {
+  font-weight: 600;
+  text-align: right;
+}
