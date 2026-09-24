@@ -3,9 +3,9 @@
   "potPerPerson": 250,
   "currency": "mxn",
   "teams": [
-    { "name": "Potatoe", "logo": "assets/logos/potato.png", "w": 1, "l": 1, "t": 0, "pts": 277.92, "status": "pledged" },
-    { "name": "Obsidians", "logo": "assets/logos/obsidians.png", "w": 1, "l": 1, "t": 0, "pts": 255.84, "status": "pledged" },
-    { "name": "Balrogs", "logo": "assets/logos/balrogs.png", "w": 0, "l": 2, "t": 0, "pts": 212.48, "status": "pledged" },
+    { "name": "Potatoe", "logo": "assets/logos/potato.png", "w": 1, "l": 1, "t": 0, "pts": 277.92, "status": "paid" },
+    { "name": "Obsidians", "logo": "assets/logos/obsidians.png", "w": 1, "l": 1, "t": 0, "pts": 255.84, "status": "paid" },
+    { "name": "Balrogs", "logo": "assets/logos/balrogs.png", "w": 0, "l": 2, "t": 0, "pts": 212.48, "status": "paid" },
     { "name": "Mean Machine", "logo": "assets/logos/meanmachine.png", "w": 0, "l": 2, "t": 0, "pts": 210.24, "status": "pledged" },
     { "name": "Stairway To Seven", "logo": "assets/logos/stairwaytoseven.png", "w": 1, "l": 1, "t": 0, "pts": 234.1, "status": "paid" },
     { "name": "Firebreathing Platypuses", "logo": "assets/logos/platypuses.png", "w": 2, "l": 0, "t": 0, "pts": 272.76, "status": "pledged" },
