@@ -3,12 +3,17 @@
   "potPerPerson": 250,
   "currency": "mxn",
   "teams": [
-    { "name": "Potatoe", "logo": "assets/logos/potato.png", "w": 1, "l": 2, "t": 0, "pts": 396.86, "status": "paid" },
-    { "name": "Obsidians", "logo": "assets/logos/obsidians.png", "w": 2, "l": 1, "t": 0, "pts": 378.98, "status": "paid" },
-    { "name": "Balrogs", "logo": "assets/logos/balrogs.png", "w": 1, "l": 2, "t": 0, "pts": 342.34, "status": "paid" },
-    { "name": "Mean Machine", "logo": "assets/logos/meanmachine.png", "w": 0, "l": 3, "t": 0, "pts": 289.66, "status": "pledged" },
-    { "name": "Seitseman", "logo": "assets/logos/seitsman.png", "w": 1, "l": 2, "t": 0, "pts": 343, "status": "paid" },
-    { "name": "Firebreathing Platypuses", "logo": "assets/logos/platypuses.png", "w": 3, "l": 0, "t": 0, "pts": 406.04, "status": "pledged" },
-    { "name": "Windwaker", "logo": "assets/logos/windwaker.png", "w": 1, "l": 2, "t": 0, "pts": 317, "status": "pledged" }
+    { "name": "Potatoe", "logo": "assets/logos/potato.png", "w": 1, "l": 2, "t": 0, "pts": 396.86, "playoffPct": 62, "streak": "L2", "inPot": true, "status": "paid" },
+    { "name": "Obsidians", "logo": "assets/logos/obsidians.png", "w": 2, "l": 1, "t": 0, "pts": 378.98, "playoffPct": 73, "streak": "W1", "inPot": true, "status": "paid" },
+    { "name": "Balrogs", "logo": "assets/logos/balrogs.png", "w": 1, "l": 2, "t": 0, "pts": 342.34, "playoffPct": 54, "streak": "W1", "inPot": true, "status": "paid" },
+    { "name": "Mean Machine", "logo": "assets/logos/meanmachine.png", "w": 0, "l": 3, "t": 0, "pts": 289.66, "playoffPct": 19, "streak": "L3", "inPot": true, "status": "pledged" },
+    { "name": "Seitseman", "logo": "assets/logos/seitsman.png", "w": 1, "l": 2, "t": 0, "pts": 343.0, "playoffPct": 48, "streak": "L2", "inPot": true, "status": "paid" },
+    { "name": "Firebreathing Platypuses", "logo": "assets/logos/platypuses.png", "w": 3, "l": 0, "t": 0, "pts": 406.04, "playoffPct": 88, "streak": "W3", "inPot": true, "status": "pledged" },
+    { "name": "Windwaker", "logo": "assets/logos/windwaker.png", "w": 1, "l": 2, "t": 0, "pts": 317.0, "playoffPct": 53, "streak": "L1", "inPot": true, "status": "pledged" },
+    { "name": "Suzaku", "logo": "assets/logos/suzaku.png", "w": 3, "l": 0, "t": 0, "pts": 395.44, "playoffPct": 83, "streak": "W3", "inPot": false },
+    { "name": "Photofreak", "logo": "assets/logos/photofreak.svg", "w": 3, "l": 0, "t": 0, "pts": 366.84, "playoffPct": 83, "streak": "W3", "inPot": false },
+    { "name": "Dan Robot", "logo": "assets/logos/danrobot.svg", "w": 2, "l": 1, "t": 0, "pts": 372.5, "playoffPct": 72, "streak": "W2", "inPot": false },
+    { "name": "Stairway To Seven", "logo": "assets/logos/stairwaytoseven.png", "w": 1, "l": 2, "t": 0, "pts": 354.38, "playoffPct": 54, "streak": "L1", "inPot": false },
+    { "name": "Terrible Towel, Mediocre Picks", "logo": "assets/logos/terribletowel.svg", "w": 0, "l": 3, "t": 0, "pts": 223.78, "playoffPct": 12, "streak": "L3", "inPot": false }
   ]
 }
